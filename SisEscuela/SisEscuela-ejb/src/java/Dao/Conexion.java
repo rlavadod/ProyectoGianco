@@ -22,9 +22,9 @@ public class Conexion {
         Connection conexion=null;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            String servidor="jdbc:mysql://localhost:3306/colegio";
+            String servidor="jdbc:mysql://localhost/Colegio";
             String usuarioDB="root";
-            String passwordDB="";
+            String passwordDB="helsinky";
             conexion = DriverManager.getConnection(servidor,usuarioDB,passwordDB);
         }catch(Exception ex){
             conexion=null;
